@@ -18,7 +18,7 @@ create/copy_configs.sh $@
 
 echo ""
 echo "=> CREATE_ALL: Creating blockchain"
-create/create_blockchain.sh $@
+create/create_blockchain.sh --with-couchdb $@
 
 echo ""
 echo "=> CREATE_ALL: Running Create Channel"
