@@ -25,3 +25,5 @@ Note: if using Paid version of Containers in Kubernetes Clusters on IBM Cloud, a
 cd hyperledger-fabric-on-kubernetes/cs-offerings/scripts && ./delete_all.sh
 ```
 Note: if using Paid version of Containers in Kubernetes Clusters on IBM Cloud, add `--paid` flag to your command.
+
+5. To instantiate Hyperledger Explorer, after all the steps above, run `./create/create_explorer.sh`
