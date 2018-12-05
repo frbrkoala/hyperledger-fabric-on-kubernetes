@@ -20,7 +20,7 @@ podSTATUS=$(kubectl get pods  --show-all --selector=job-name=copyartifacts --out
 
 while [ "${podSTATUS}" != "Running" ]; do
     echo "Wating for container of copy artifact pod to run. Current status of ${pod} is ${podSTATUS}"
-    sleep 5;
+    sleep 10;
     if [ "${podSTATUS}" == "Error" ]; then
         echo "There is an error in copyartifacts job. Please check logs."
         exit 1
@@ -34,8 +34,8 @@ echo -e "\nStarting to copy artifacts in persistent volume."
 #fix for this script to work on icp and ICS
 kubectl cp ${CONFIG_FOLDER} $pod:/shared/
 
-echo "Waiting for 10 more seconds for copying artifacts to avoid any network delay"
-sleep 10
+echo "Waiting for 20 more seconds for copying artifacts to avoid any network delay"
+sleep 20
 
 
 echo "Copy artifacts job completed"

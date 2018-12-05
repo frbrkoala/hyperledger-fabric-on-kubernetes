@@ -31,9 +31,9 @@ CHANNEL_NAME="channel1" PEER_MSPID="Org1MSP" PEER_ADDRESS="blockchain-org1peer1:
 echo "=> CREATE_ALL: Running Join Channel on Org2 Peer1"
 CHANNEL_NAME="channel1" PEER_MSPID="Org2MSP" PEER_ADDRESS="blockchain-org2peer1:30210" MSP_CONFIGPATH="/shared/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp" create/join_channel.sh
 
-echo ""
-echo "=> CREATE_ALL: Creating composer playground"
-create/create_composer-playground.sh $@
+#echo ""
+#echo "=> CREATE_ALL: Creating composer playground"
+#create/create_composer-playground.sh $@
 
 # Can't create this until the user has performed manual actions in the Composer Playground.
 # echo ""

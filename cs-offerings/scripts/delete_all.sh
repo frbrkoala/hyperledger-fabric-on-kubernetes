@@ -15,13 +15,13 @@ echo ""
 echo "=> DELETE_ALL: Deleting create and join channel pods"
 ./delete/delete_channel-pods.sh
 
-echo ""
-echo "=> DELETE_ALL: Deleting composer playground"
-./delete/delete_composer-playground.sh $@
+# echo ""
+# echo "=> DELETE_ALL: Deleting composer playground"
+# ./delete/delete_composer-playground.sh $@
 
-echo ""
-echo "=> DELETE_ALL: Deleting Hyperledger Explorer"
-./delete/delete_explorer.sh $@
+# echo ""
+# echo "=> DELETE_ALL: Deleting Hyperledger Explorer"
+# ./delete/delete_explorer.sh $@
 
 
 #echo ""
